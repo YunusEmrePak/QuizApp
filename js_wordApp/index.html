@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container start">
+        <div class="titleApp"><strong>Welcome to the Quiz App</strong></div>
+        <div class="quiz-img">
+            <img src="../img/quiz.jpg" alt="">
+        </div>
+        <div class="btnClass">
+            <button class="btn btn-ready">Start the test</button>
+        </div>
+    </div>
+
+    <div class="container app visHidden">
+        <div class="title"><b>Word Quiz App</b></div>
+        <div class="question-number"></div>
+        <div class="question-words">
+            <div class="text-word"><b>Word: &nbsp;</b></div>
+            <div class="word-given"></div>
+        </div>
+        <div class="answer-words">
+            <div class="answer-text"><b>Answer: &nbsp;</b></div>
+            <div class="answer-given visHidden"></div>
+        </div>
+        <div class="btnClass">
+            <button class="btn btn-check">Check</button>
+        </div>
+        <div class="count">
+            <div class="known"> </div>
+            <div class="unknown"></div>
+        </div>
+        <div class="btnClass">
+            <button class="btn btn-true">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="btn btn-false">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <button class="btn btn-next">Next</button>
+        </div>
+    </div>
+
+    <div class="container finishApp visHidden">
+        <div class="title"><b>Word Quiz App</b></div>
+        <div class="gif"></div>
+        <div class="comment" style="margin-bottom: 20px;"><strong>You finished the app</strong> </div>
+        <div class="btnClass">
+            <button class="btn btn-again">Return to Start</button>
+        </div>
+    </div>
+    
+    
+    <script src="words.js"></script>
+    <script src="wordInfo.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
